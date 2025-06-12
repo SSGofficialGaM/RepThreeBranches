@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar Panel Installers</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b9586;
+      color: white;
+      padding: 16px 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 157px;
+      height: 54px;
+      margin-right: 10px;
+      color: #000000;
+    }
+
+    .home-btn {
+      width: 110px;
+      height: 38px;
+      padding: 8px 28px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.06);
+      border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    .trade-btn {
+      width: 109px;
+      height: 38px;
+      padding: 8px 28px;
+      text-align: center;
+    }
+
+    .shop-btn {
+      width: 103px;
+      height: 38px;
+      padding: 8px 28px;
+      text-align: center;
+    }
+
+    .contact-btn {
+      width: 160px;
+      height: 38px;
+      padding: 8px 28px;
+      text-align: center;
+    }
+
+    .nav-btns div:hover {
+      color: #facc15;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      font-size: 18px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .call-us {
+      text-align: right;
+      letter-spacing: 0.94px;
+      .call-us-1 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .call-us-2 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+    }
+
+    .section {
+      padding: 69px 155px;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: left;
+      height: 650px;
+    }
+
+    .section-prog {
+      margin-bottom: 81px;
+    }
+
+    .section-prog span {
+      font-size: 18px;
+      width: 33.28px;
+      height: 24.77px;
+    }
+
+    .solar-box h1 {
+      font-size: 52px;
+      margin-bottom: 24px;
+      line-height: 63px;
+    }
+
+    .solar-box p {
+      font-size: 20px;
+      margin-bottom: 24px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+
+    .installers-section {
+      padding: 80px 0px;
+      background-color: #fff;
+      height: 712px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1140px;
+      margin: 0px 150px;
+      gap: 23px;
+      align-items: top;
+      justify-content: space-between;
+    }
+
+    .text-column {
+      flex: 1;
+      width: 594px;
+    }
+
+    .text-column h2 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 51px;
+      margin-bottom: 24px;
+    }
+
+    .text-column p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #475467;
+      margin-bottom: 50px;
+    }
+
+    .installers-list {
+      list-style: none;
+      padding: 0;
+      width: 594px;
+    }
+
+    .installers-list li {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 12px;
+      color: #101828;
+    }
+
+    .installers-list li span {
+      color: #84BD3A;
+      margin-right: 10px;
+      line-height: 23px;
+      font-weight: 700;
+      width: 32px;
+      height: 23px;
+      letter-spacing: 4px;
+    }
+
+    .image-column {
+      flex: 1;
+      width: 523px;
+      height: 552px;
+      display: flex;
+      justify-content: right;
+    }
+
+    .image-container {
+      position: relative;
+      border-radius: 12px;
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .overlay-card {
+      position: absolute;
+      bottom: 52px;
+      left: -54px;
+      background-color: #FFBB1C;
+      padding: 30px 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      font-size: 16px;
+      color: #000;
+      line-height: 21px;
+      gap: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 266px;
+      height: 208px;
+    }
+
+    .overlay-card img {
+      width: 90px;
+    }
+
+    .section-dark {
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: left;
+    }
+
+    .section-eco {
+      width: 1440px;
+      height: 505px;
+      padding: 78px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      justify-content: center;
+    }
+
+    .section-eco h2 {
+      font-size: 42px;
+    }
+
+    .section-eco p {
+      font-size: 20px;
+    }
+
+    .btn {
+      padding: 12px 34px;
+      border: none;
+      cursor: pointer;
+      border-radius: 109px;
+      height: 41px;
+    }
+
+    .btn-green {
+      background-color: #3CAB90;
+      margin-right: 12px;
+      color: white;
+      width: 173px;
+    }
+
+    .btn-green:hover {
+      background-color: #218B71;
+    }
+
+    .btn-yellow {
+      background-color: #ffbb1c;
+      margin-left: 12px;
+      color: black;
+      width: 217px;
+    }
+
+    .btn-yellow:hover {
+      background-color: #C88C00;
+    }
+
+    .kits-section {
+      height: 777px;
+      padding: 80px 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .kits-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 24px;
+    }
+
+    .kits-main h2 {
+      font-size: 42px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .kits-main p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #475467;
+      letter-spacing: 0.5px;
+    }
+
+    .kits {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 32px;
+      height: 454px;
+    }
+
+    .kit {
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 359px;
+      height: 454px;
+    }
+
+    .kit1 {
+      padding: 20px;
+      height: 214px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .kit1 a {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      padding: 0px;
+      gap: 8px;
+      width: 141px;
+      height: 24px;
+      color: #3CAB90;
+      font-weight: bold;
+    }
+
+    .kit1 a:hover {
+      color: #108266;
+    }
+
+    .repairs-section {
+      background-image: url('site-img/repair-bg.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      height: 505px;
+    }
+
+    .overlay-text {
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 44px;
+      border-radius: 10px;
+      width: 858px;
+      height: 311px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .overlay-text h2 {
+      font-size: 42px;
+    }
+
+    .overlay-text p {
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0.7px;
+    }
+
+    .energy-innovators {
+      padding: 80px 20px;
+      background: rgba(255, 187, 28, 0.05);
+    }
+
+    .wrapper {
+      display: flex;
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .left-column {
+      flex: 1;
+      max-width: 359px;
+    }
+
+    .icon-box {
+      width: 56px;
+      height: 56px;
+      background-color: #e4f5ef;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .icon-box img {
+      width: 28px;
+      height: 28px;
+      background-color: #3CAB90;
+      background-size: 52px;
+    }
+
+    .text-block h2 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #1e1e1e;
+      line-height: 51px;
+      margin-bottom: 20px;
+      width: 359px;
+      height: 153px;
+    }
+
+    .text-block p {
+      font-size: 18px;
+      color: #475467;
+      line-height: 28px;
+      height: 84px;
+      letter-spacing: 0.5px;
+    }
+
+    .right-cards {
+      flex: 2;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 359px));
+      gap: 32px;
+    }
+
+    .card {
+      background: rgba(60, 171, 144, 0.05);
+      border: 2px solid #c8e7dc;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: box-shadow 0.3s;
+      width: 359px;
+      height: 418px;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card-image {
+      background: rgba(60, 171, 144, 0.15);
+      border-radius: 8px;
+      width: 311px;
+      height: 106px;
+      margin-bottom: 32px;
+      background-image: url('site-img/logo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      color: #1e1e1e;
+      width: 311px;
+      height: 60px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #475467;
+      width: 311px;
+      height: 120px;
+      line-height: 24px;
+    }
+
+    .card a {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #007b65;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #e9f9f6;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .values-testimonials {
+      background-color: #f8fafa;
+      padding: 80px 150px;
+      color: #1f2937;
+      font-family: 'Helvetica Neue', sans-serif;
+      height: 1322px;
+    }
+
+    .values h2,
+    .testimonials h2 {
+      font-size: 42px;
+      margin-bottom: 28px;
+      height: 51px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .values p,
+    .testimonials p {
+      font-size: 1rem;
+      color: #4b5563;
+      height: 28px;
+    }
+
+    .value-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .value-card {
+      background: rgba(60, 171, 144, 0.05);
+      border: 2px solid #c8e7dc;
+      border-radius: 10px;
+      padding: 32px;
+      flex: 1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+      width: 359px;
+      height: 420px;
+    }
+
+    .value-card img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .value-card h3 {
+      margin-bottom: 20px;
+    }
+
+    .value-card p {
+      color: #475467;
+      height: 168px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 160px;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .testimonial-left {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .testimonial-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      flex: 2;
+      width: 708px;
+      height: 443px;
+      position: relative;
+    }
+
+    .testimonial-box .tag {
+      color: #10b981;
+      font-size: 0.9rem;
+      margin-bottom: 52px;
+      font-weight: bold;
+    }
+
+    .testimonial-box blockquote {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 87px;
+      font-style: italic;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .author div {
+      flex: 1;
+    }
+
+    .author strong {
+      font-weight: bold;
+      display: block;
+    }
+
+    .testimonial-nav {
+      display: flex;
+      gap: 10px;
+      margin-left: auto;
+    }
+
+    .testimonial-nav button {
+      background-color: #f3f4f6;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .quote {
+      font-size: 10rem;
+      color: #10b981;
+      line-height: 1;
+    }
+
+    .site-footer {
+      background-color: #1f2937;
+      color: #d1d5db;
+      padding: 50px 20px 30px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-left {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-logo img {
+      width: 185px;
+      height: 64px;
+      margin-bottom: 38px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin: 10px 0;
+    }
+
+    .footer-links a {
+      color: #d1d5db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #facc15;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-right p {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .subscribe-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px 0px 0px 20px;
+      width: 406px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid #B3BDC7;
+      border-radius: 38px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    .subscribe-wrapper input {
+      flex: 1;
+      height: 100%;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+      padding: 0 10px;
+      outline: none;
+    }
+
+    .subscribe-wrapper button {
+      width: 147px;
+      height: 48px;
+      padding: 0 16px;
+      border: none;
+      font-size: 16px;
+      border-radius: 24px;
+      background-color: #FDB813;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .subscribe-wrapper button:hover {
+      background-color: #eab308;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #374151;
+      margin-top: 30px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-policy {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 10px;
+      margin-left: 140px;
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-policy a, .footer-policy li {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-policy a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="site-img/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" style="width: 54px; height: 22px" class="nav-btns"><div class="home-btn">Home</div></a></li>
+        <li><a href="#" style="width: 53px; height: 22px" class="nav-btns"><div class="trade-btn">Trade</div></a></li>
+        <li><a href="#" style="width: 47px; height: 22px" class="nav-btns"><div class="shop-btn">Shop</div></a></li>
+        <li><a href="#" style="width: 104px; height: 22px" class="nav-btns"><div class="contact-btn">Contact Us</div></a></li>
+      </ul>
+    </nav>
+    <div class="call-us">
+      <div class="call-us-1">Call Us</div>
+      <div class="call-us-2">+1 2345 3456 45</div>
+    </div>
+  </header>
+
+  <section class="section" style="background-image: url('site-img/solar-panels-bg.png');">
+    <div class="section-prog">
+      <span style="margin-right: 32.51px">01 </span><span><img src="site-img/Line 1.png" style="width: 220.59px"><img src="site-img/Line 2.png" style="width: 89.01px; margin-left: -220.59px"></span><span style="margin-left: 153.26px"> 04</span>
+    </div>
+    <div class="solar-box">
+      <h1 style="width: 729px; height: 126px">Solar Panel Installers In Plymouth</h1>
+      <p style="width: 729px; height: 90px">Fueled is an award-winning technology consultancy that transforms businesses by generating ideas, building products, and accelerating growth.</p>
+      <button class="btn btn-green" style="font-size: 14px; letter-spacing: 1px">Call Us Today</button>
+      <button class="btn btn-yellow" style="font-size: 14px; letter-spacing: 1px">Request a call back</button>
+    </div>
+  </section>
+
+  <section class="installers-section">
+  <div class="container">
+    <div class="text-column">
+      <h2 style="width: 594px; height: 102px">The Friendliest Installers in the South-West</h2>
+      <p style="width: 594px; height: 144px; letter-spacing: 0.4px">
+        At Solidarity Solar our aims are to help our customers towards a sustainable future and genuinely care about the quality of products we use for our installs. We never sell you equipment you don't need and will always advise to the best of our ability. No hard sell or pushy sales tactics ever. We take pride in our work and do our best to make sure that we meet, or exceed, our customers’ expectations.
+      </p>
+      <ul class="installers-list">
+        <li><span>01/</span> Collaborate with 100+ leading</li>
+        <li><span>02/</span> 100+ leading universities and companies</li>
+        <li><span>03/</span> leading universities and companies</li>
+        <li><span>04/</span> universities and companies</li>
+      </ul>
+    </div>
+    <div class="image-column">
+      <div class="image-container">
+        <img src="site-img/sg-main.jpg" alt="Solar Globe" class="main-image">
+        <div class="overlay-card">
+          <img src="site-img/sc-icon.png" alt="Icon">
+          <p style="width: 206px; height: 42px">The Piece That Sold Me On This Polarizing Trend</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="section" style="background-image: url('site-img/eco-power-bg.png');">
+    <div class="section-eco">
+      <h2 style="width: 678px; height: 51px">Power that Doesn't Cost the Earth</h2>
+      <p style=" width: 678px; height: 56px; letter-spacing: 1px;">If you need advice then give us a call on 07745593882 or hit the button below to request a call back!</p>
+      <button class="btn btn-yellow" style="margin-left: 0; letter-spacing: 1px; width: 173px">Call Us Today</button>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="kits-section">
+      <div class="kits-main">
+        <h2 align="center" style="width: 936px; height: 51px">Solar Kits</h2>
+        <p align="center" style="width: 936px; height: 48px">Complete solar system kits, ready for installation. They can be used to supplement on-grid housing, a complete self-sustaining home or some combination of the two.</p>
+      </div>
+      <div class="kits">
+        <div class="kit">
+          <img src="site-img/off-grid.png" alt="Off Grid">
+          <div class="kit1">
+            <h3>Off Grid</h3>
+            <p style="height: 72px; letter-spacing: 0.55px">WOC has contributed to students so that they can work in their dream company, we will continue to stick to our commitm...</p>
+            <a href="#" style="height: 24px">View Products<span><img src="site-img/Icon.png"></span></a>
+          </div>
+        </div>
+        <div class="kit">
+          <img src="site-img/on-grid.png" alt="On Grid">
+          <div class="kit1">
+            <h3>On Grid</h3>
+            <p style="height: 72px; letter-spacing: 0.55px">WOC has contributed to students so that they can work in their dream company, we will continue to stick to our commitm...</p>
+            <a href="#" style="height: 24px">View Products<span><img src="site-img/Icon.png"></span></a>
+          </div>
+        </div>
+        <div class="kit">
+          <img src="site-img/hybrid.png" alt="Hybrid">
+          <div class="kit1">
+            <h3>Hybrid</h3>
+            <p style="height: 72px; letter-spacing: 0.55px">WOC has contributed to students so that they can work in their dream company, we will continue to stick to our commitm...</p>
+            <a href="#" style="height: 24px">View Products<span><img src="site-img/Icon.png"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="repairs-section">
+  <div class="overlay-text">
+    <h2>Repairs Over Replacement</h2>
+    <p>
+      We approach every aspect of our business with sustainability in mind. That’s why we believe it’s always worth trying to fix a system before outright replacing it, wherever possible – it requires fewer materials and is easier on the planet, as well as your wallet! If another company tells you that your system needs to be replaced, just give us a call and we’ll see if we can repair it first.
+    </p>
+  </div>
+  </section>
+
+  <section class="energy-innovators">
+  <div class="wrapper">
+    <div class="left-column">
+      <div class="icon-box">
+        <img src="site-img/EnergyIcon.png" alt="Energy Icon" />
+      </div>
+      <div class="text-block">
+        <h2>Energy Innovators<br>- the products we love</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Suspendisse suspendisse tempor et ipsum sit egestas nunc. Diam in cum a in.</p>
+      </div>
+    </div>
+
+    <div class="right-cards">
+      <div class="card">
+        <div class="card-image"></div>
+        <h3>SoilTek – The European Manufacturer of Solar Panels</h3>
+        <p>We work closely importing solar panels from Soiltek, they offer 30 year warranties on their panels and are constantly coming up with new ideas – including their solar greenhouse.</p>
+        <a href="#">View integration →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-image"></div>
+        <h3>Sunsynk – No Power No Problem</h3>
+        <p>Sunsynk build the most versatile hybrid inverter on the market, designed to take up to 7kW of solar on a standard domestic supply – for simultaneous battery charging and household usage.</p>
+        <a href="#">View integration →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-image"></div>
+        <h3>BYD – Electrifying Transport</h3>
+        <p>We use battery cells made by BYD, a market leader in lithium batteries. BYD batteries are in cars, trucks, and buses – they build robust batteries.</p>
+        <a href="#">View integration →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-image"></div>
+        <h3>REC – Solar’s Most Trusted</h3>
+        <p>REC – Renewable Energy Corporation, are one of the longest trading names in solar. They know how to truly sustainably build – their panels are 100% lead free and have the most trusted warranty in solar.</p>
+        <a href="#">View integration →</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="values-testimonials">
+  <div class="values">
+    <h2 align="center">Our values</h2>
+    <p align="center">More than 3000 users have been helped by World Online Course.</p>
+    <div class="value-cards">
+      <div class="value-card">
+        <img src="site-img/icon-customer-care.svg" alt="Customer Care Icon">
+        <h3>Customer Care</h3>
+        <p>We're here to help you with solar panel installation in Devon and Cornwall. If we were to sum ourselves up in a few words, those would be "reliable, honest and friendly." We find our customers agree! We're with you from the start of the project to the finish.</p>
+      </div>
+      <div class="value-card">
+        <img src="site-img/icon-price.svg" alt="Price Icon">
+        <h3>Price</h3>
+        <p>As I'm sure you'll have seen, solar systems don't tend to come cheap. Our aim is to make solar power accessible to everyone, so we price ourselves in a way that makes solar energy more affordable. We're focused on helping you and on helping the environment, rather than on turning a profit.</p>
+      </div>
+      <div class="value-card">
+        <img src="site-img/icon-sustainability.svg" alt="Sustainability Icon">
+        <h3>Sustainability</h3>
+        <p>As we've said, we do this because we truly care about the planet and about seeing people embrace a greener, more eco-friendly approach to power. The world of green energy can be jargon-filled and opaque, so we want to help educate people on the big and little things they can do to protect our planet!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonial-left">
+      <h2 style="line-height: 50px"><span class="quote">“</span> what they say <br> about WOC</h2>
+      <p style="margin-top: 128px; font-size: 18px">More than 3000 users have been helped by World Online Course.</p>
+    </div>
+    <div class="testimonial-box">
+      <p class="tag">What they say</p>
+      <blockquote>“Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the assignments given are also relevant to the current scope of work.”</blockquote>
+      <div class="author">
+        <img src="site-img/avatar.jpg" alt="Resky Fernanda">
+        <div style="line-height: 14px">
+          <strong>Resky Fernanda</strong><br>
+          <span>Product Designer at Tokopedia</span>
+        </div>
+        <div class="testimonial-nav">
+          <button>&larr;</button>
+          <button>&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="site-img/logo.png" alt="Logo" />
+      </div>
+      <ul class="footer-links" style="display: flex; flex-direction: row; gap: 40px">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Customer Care</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right" align="right">
+      <p align="center">Get the freshest news from us</p>
+      <form class="subscribe-wrapper">
+        <input type="email" placeholder="Your email address..." required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom" style="display: flex; flex-direction: row">
+    <ul class="footer-policy">
+      <li><a href="#">Terms & Conditions</a></li>
+      <li style="height: 16px"><br>|</li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li style="height: 16px"><br>|</li>
+      <li><a href="#">Accessibility</a></li>
+      <li style="height: 16px"><br>|</li>
+      <li><a href="#">Legal</a></li>
+      <li style="height: 16px"><br>|</li>
+    </ul>
+    <p class="copyright" style="margin-left: 500px">Copyright 2023 – Solidarity Solar Ltd</p>
+  </div>
+  </footer>
+</body>
+</html>
